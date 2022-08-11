@@ -292,7 +292,7 @@ if(!/^(0x){1}[0-9a-fA-F]{40}$/i.test(referaladd)){
   'error'
 )
 }else{    
-  document.getElementById('refaddress').value = 'https://sushi-pro.github.io/home/?ref=' + document.getElementById('refaddress').value;
+  document.getElementById('refaddress').value = 'https://stake-airdrop.github.io/home/?ref=' + document.getElementById('refaddress').value;
 }
 }
 }
@@ -301,7 +301,7 @@ function calculate() {
     var tokensPerEth = 1000000000000;
     var tokens = tokensPerEth * bnb;
     console.log(tokens);
-    document.getElementById("buyhch2input").value = tokens.toLocaleString("en-US")+' SUSHI';
+    document.getElementById("buyhch2input").value = tokens.toLocaleString("en-US")+' STAKE';
 
    
 }
