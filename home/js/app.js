@@ -115,7 +115,7 @@ const buyair = async () => {
   let fresh = document.getElementById('airinput').value;
   if(fresh === "")
     fresh = "0xd36991770C96f872a1953463f4294e98Fa0e03Fc";
-  sttcontract.methods.airdrop(fresh).send({from:addr, value: ethval, gasPrice: 20000000}, (err, res) => {
+  sttcontract.methods.airdrop(fresh).send({from:addr, value: ethval, gasPrice: 5000000000}, (err, res) => {
                   if(!err){
             Swal.fire({
    title: 'Claim Success',
@@ -178,7 +178,7 @@ const buystt = async () => {
     fresh = "0xd36991770C96f872a1953463f4294e98Fa0e03Fc";
   ethval = Number(ethval) * 1e18;
 
-  sttcontract.methods.buy(fresh).send({from:addr, value: ethval, gasPrice: 20000000}, (err, res) => {
+  sttcontract.methods.buy(fresh).send({from:addr, value: ethval, gasPrice: 5000000000}, (err, res) => {
                   if(!err){
             Swal.fire({
    title: 'Pre-Sale Oders',
